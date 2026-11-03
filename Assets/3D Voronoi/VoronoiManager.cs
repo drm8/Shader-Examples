@@ -69,7 +69,9 @@ public class VoronoiManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		// Get point data
+		// Get point data.
+		// Each point is saved to an array before the buffer
+		// is written to get a count of how many there are.
 		framePointCount = 0;
 		pointRequest?.Invoke();
 
@@ -98,7 +100,6 @@ public class VoronoiManager : MonoBehaviour
 
 	public void AddPointData(VoronoiPointData data)
 	{
-		// Each point is saved to an array before the buffer is written to get a count of how many there are
 		if (framePointCount < maxBufferSize)
 		{
 			framePointData[framePointCount] = data;
