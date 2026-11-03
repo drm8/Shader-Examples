@@ -2128,7 +2128,7 @@ GameObject:
   - component: {fileID: 1697261060}
   - component: {fileID: 1697261059}
   m_Layer: 0
-  m_Name: Cylinder (4)
+  m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
